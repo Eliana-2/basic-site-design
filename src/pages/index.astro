@@ -12,27 +12,36 @@ import Layout from '../layouts/Layout.astro';
       </div>
     </div>
     <div class="description">
-      <div class="main-content">
+      <div class="container">
         <section class="benefits">
-          <h2>Meet the Mew You</h2>
+          <h2>Your Catalyst for Change</h2>
           <div class="benefit-container">
             <div class="benefit">
-              <h3>Find Your Direction</h3>
+              <h3>Find Direction</h3>
               <img src="icons/direction.svg" class="benefit-icon">
-              <p>Discover your needs</p>
+              <p>Better understand your wants and needs so you can plan the for the future.</p>
             </div>
             <div class="benefit">
-              <h3>Find Your Direction</h3>
-              <img src="icons/direction.svg" class="benefit-icon">
-              <p>Discover your needs</p>
+              <h3>Improve Relationships</h3>
+              <img src="icons/relationship.svg" class="benefit-icon">
+              <p>Learn to communicate more effectively with the people in your life.</p>
             </div>
             <div class="benefit">
-              <h3>Find Your Direction</h3>
-              <img src="icons/direction.svg" class="benefit-icon">
-              <p>Discover your needs</p>
+              <h3>Achieve your Goals</h3>
+              <img src="icons/achievement.svg" class="benefit-icon">
+              <p>Develop the confidence and resilience necessary to overcome potential setbacks.</p>
             </div>
           </div>
         </section>
+      </div>
+    </div>
+    <div class="social-proof">
+      <div class="social-proof-content">
+      <p>Catalyst Life Coaching helped me escape the rat race and move furward with my career change. I can't recommend them enough! <br /> &mdash;A-not-a-mouse Client</p>
+      </div>
+    </div>
+    <div class="description">
+      <div class="container">
         <section class="main-content-section">
           <h2>You only live nine times</h2>
           <p>Our expert coaches have spent multiple lifetimes helping humans build their purrfect lives. Catalyst Life Coaching offers <a href="">services</a> tailored to your individual needs. Whether you dream of hunting mice, sunbathing, or sleeping on your owner, we can help. </p>
@@ -41,11 +50,6 @@ import Layout from '../layouts/Layout.astro';
           <h2>Meet the Mew You</h2>
           <p>Change may seem furmidable, but a little effurt goes a long way. We've seen remarkable transfurmations happen in our <a href="">20-year hisstory.</a> As a result, we furmly believe in the pawsome potential of people to grow given proper guidance. A better way furward starts here.</p>
         </section>
-      </div>
-    </div>
-    <div class="social-proof">
-      <div class="social-proof-content">
-      <p>Catalyst Life Coaching helped me escape the rat race and move furward with my career change. I can't recommend them enough! <br /> &mdash;A-not-a-mouse Client</p>
       </div>
     </div>
   </main>
@@ -92,16 +96,16 @@ import Layout from '../layouts/Layout.astro';
     font-size: 1.25rem;
     padding: 0.5rem;
     border-radius: 0.5rem;
-    background-color: #C87ADE;
-    border-color:  #C87ADE;
+    background-color: var(--primary-color);
+    border-color:  var(--primary-color);
   }
   .description {
     width: 100%;
     display: flex;
     justify-content: center;
   }
-  .main-content {
-    padding: 4rem;
+  .container {
+    padding: 3rem;
     max-width: 1000px;
     display: flex;
     flex-direction: column;
@@ -109,26 +113,32 @@ import Layout from '../layouts/Layout.astro';
   }
   .benefits h2 {
     text-align: center;
+    color: var(--primary-color);
   }
   .benefit-container {
     display: flex;
     justify-content: space-between;
   }
   .benefit {
+    margin-top: 1rem;
+    width: 25%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 1rem;
+    text-align: center;
   }
   .benefit-icon {
     width: 5rem;
+  }
+  .benefit p {
+    padding: 1rem;
   }
   .main-content-section {
     display: flex;
     flex-direction: column;
   }
   .main-content-section h2 {
-    color: #C87ADE;
+    color: var(--primary-color);
   }
   .main-content-section p {
     line-height: 150%;
@@ -136,7 +146,7 @@ import Layout from '../layouts/Layout.astro';
   .social-proof {
     padding: 2rem;
     width: 100%;
-    background-color:#C87ADE;
+    background-color:var(--primary-color);
     display: flex;
     justify-content: center;
   }
