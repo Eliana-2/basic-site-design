@@ -17,18 +17,18 @@ import Layout from '../layouts/Layout.astro';
           <h2>Your Catalyst for Change</h2>
           <div class="benefit-container">
             <div class="benefit">
-              <h3>Find Direction</h3>
               <img src="icons/direction.svg" class="benefit-icon">
+              <h3>Find Direction</h3>
               <p>Better understand your wants and needs so you can plan the for the future.</p>
             </div>
             <div class="benefit">
-              <h3>Improve Relationships</h3>
               <img src="icons/relationship.svg" class="benefit-icon">
+              <h3>Improve Relationships</h3>
               <p>Learn to communicate more effectively with the people in your life.</p>
             </div>
             <div class="benefit">
-              <h3>Achieve your Goals</h3>
               <img src="icons/achievement.svg" class="benefit-icon">
+              <h3>Achieve your Goals</h3>
               <p>Develop the confidence and resilience necessary to overcome potential setbacks.</p>
             </div>
           </div>
@@ -87,9 +87,6 @@ import Layout from '../layouts/Layout.astro';
   .hero-heading {
     font-size: 2.5rem;
   }
-  .hero-subheading {
-
-  }
   .hero-button {
     margin-top: 2rem;
     font-family: inherit;
@@ -98,6 +95,9 @@ import Layout from '../layouts/Layout.astro';
     border-radius: 0.5rem;
     background-color: var(--primary-color);
     border-color:  var(--primary-color);
+  }
+  .hero-button:hover {
+    opacity: 75%;
   }
   .description {
     width: 100%;
@@ -109,6 +109,7 @@ import Layout from '../layouts/Layout.astro';
     max-width: 1000px;
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 1rem;
   }
   .benefits h2 {
@@ -131,7 +132,7 @@ import Layout from '../layouts/Layout.astro';
     width: 5rem;
   }
   .benefit p {
-    padding: 1rem;
+    padding: 0 1rem;
   }
   .main-content-section {
     display: flex;
