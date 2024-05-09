@@ -1,4 +1,83 @@
 ---
 import Layout from '../layouts/Layout.astro';
 ---
-<Layout title="Catalyst Life Coaching - About"></Layout>
+<Layout title="Catalyst Life Coaching - About">
+  <main>
+      <div class="summary-container">
+        <div class="summary">
+          <h1>Changing Lives fur the Better</h1>
+          <img src="icons/help.svg" class="summary-icon">
+          <h2>At Catalyst Life Coaching, we provide purrsonalized one-on-one sessions focused on individual needs.</h2>
+        </div>
+      </div>
+      <div class="history-container">
+        <section class="history">
+          <div class="history-content">
+            <div class="history-text">
+              <h2>Our story</h2>
+              <p>It all started with a cat and a plan. As a young kitten in Catalonia, our founder Catalia noticed the humans around her struggling with their day-to-day lives. While she realized her dreams every day by lying in the sun and knocking over glasses, her humans were much less satisfied. She realized then just how important it is to make the most of the time we have. </p>
+            </div>
+            <img src="images/catalina2.jpg">
+          </div>
+        </section>
+      </div>
+      <div class="cta-container">
+        <div class="cta">
+          <h2>Ready to live life to the furrest?</h2>
+          <button>Contact Us</button>
+        </div>
+      </div>
+  </main>
+</Layout>
+<style>
+  .summary-container, .history-container, .cta-container {
+    display: flex;
+    justify-content: center;
+  }
+  .history-container {
+    background-color: var(--primary-color);
+  }
+  .history {
+  }
+  .summary, .history, .cta {
+    padding: 3rem;
+    max-width: 1000px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+  }
+  .history {
+    text-align: left;
+  }
+  .history-content {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+  }
+  .history img {
+    width: 45%;
+    border-radius: 1rem;
+  }
+  .history h2 {
+    text-align: center;
+  }
+  .history p {
+    font-size: 1.75rem;
+  }
+  .summary-icon {
+    width: 7rem;
+  }
+  .cta button {
+    font-family: inherit;
+    font-size: 1.25rem;
+    padding: 0.5rem;
+    border-radius: .5rem;
+    background-color: var(--primary-color);
+    border-color:  var(--primary-color);
+  }
+  .cta button:hover {
+    opacity: 75%;
+  }
+</style>
