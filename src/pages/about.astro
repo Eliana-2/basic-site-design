@@ -3,14 +3,14 @@ import Layout from '../layouts/Layout.astro';
 ---
 <Layout title="Catalyst Life Coaching - About">
   <main>
-      <div class="summary-container">
+      <div class="container">
         <div class="summary">
           <h1>Changing Lives fur the Better</h1>
           <img src="icons/help.svg" class="summary-icon">
           <h2>At Catalyst Life Coaching, we provide purrsonalized one-on-one sessions focused on individual needs.</h2>
         </div>
       </div>
-      <div class="history-container">
+      <div class="container history-container">
         <section class="history">
           <div class="history-content">
             <div class="history-text">
@@ -21,7 +21,7 @@ import Layout from '../layouts/Layout.astro';
           </div>
         </section>
       </div>
-      <div class="cta-container">
+      <div class="container">
         <div class="cta">
           <h2>Ready to live life to the furrest?</h2>
           <p>We strive to help our clients thrive and find catisfaction with their lives. As our wise founder Catalina would say, you only live nine times. We make every effort to live by those words and teach others to do the same. Our mission is to help people embrace life's pawsibilities and make the most of every day.</p>
@@ -31,7 +31,7 @@ import Layout from '../layouts/Layout.astro';
   </main>
 </Layout>
 <style>
-  .summary-container, .history-container, .cta-container {
+  .container {
     display: flex;
     justify-content: center;
   }
@@ -39,6 +39,8 @@ import Layout from '../layouts/Layout.astro';
     background-color: var(--primary-color);
   }
   .history {
+    --history-image-width: calc(500px - 4rem);
+    --history-image-height: 411.46px;
   }
   .summary, .history, .cta {
     padding: 3rem;
@@ -56,9 +58,14 @@ import Layout from '../layouts/Layout.astro';
     display: flex;
     align-items: center;
     gap: 2rem;
+    height: var(--history-image-height);
+  }
+  .history-text {
+    width: var(--history-image-width);
   }
   .history img {
-    width: 45%;
+    width: var(--history-image-width);
+    height: auto;
     border-radius: 1rem;
   }
   .history h2 {
@@ -66,11 +73,12 @@ import Layout from '../layouts/Layout.astro';
     text-align: center;
   }
   .history p {
-    font-size: 1.75rem;
+    font-size: 1.7rem;
 
   }
   .summary-icon {
     width: 7rem;
+    height: 7rem;
   }
   .cta p {
     text-align: left;

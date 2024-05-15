@@ -1,0 +1,185 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Catalyst Life Coaching - Services">
+  <main>
+    <div class="hero">
+      <div class="hero-content">
+        <div class="hero-text">
+          <h1 class="hero-heading">Discover your purrpose and realize your dreams</h1>
+          <h2 class="hero-subheading">Transfurm your life through one-on-one sessions designed with mew in mind</h2>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="description">
+        <h2 class="description-heading">Heads and tails above the rest</h2>
+        <section class="main-content-section">
+          <h3>Our expurrtise</h3>
+          <p>We specialize in helping humans achieve greater life catisfaction through guided self-discovery and self-improvement. Our licensed coaches have a combined 1500 cat years of experience accross mutliple lifetimes. All are trained in Catalina's catented technique of CAT (cat actualization tactics). You're in good paws.</p>
+        </section>
+        <section class="main-content-section">
+          <h3>Our pawcess</h3>
+          <p>At Catalyst, we believe understanding the unique needs of our clients is the key moving furward. That's why any furst session consists of both a purrsonality test and open-ended questions about your goals in working with us. In accordance with CAT, we use these insights to develop an action plan suited to your values. Staying motivated is important to maintain consistent effurt, so we also help you build helpful habits in your daily life.</p>
+        </section>
+      </div>
+    </div>
+    <div class="container stats-container">
+      <div class="stats">
+        <div class="stat">
+          <p class="stat-number">97%</p>
+          <p class="stat-description">of humans think positively of the influence of cats in their lives</p>
+        </div>
+        <div class="stat">
+          <p class="stat-number">4.9</p>
+          <p class="stat-description">average star rating accross 1,234 reviews on TailPage</p>
+        </div>
+        <div class="stat">
+          <p class="stat-number">1500</p>
+          <p class="stat-description">combined cat-years of experience between our coaches</p>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="services-wrapper">
+        <h2>Session Packages</h2>
+        <div class="services">
+          <div class="service">
+            <img src="icons/calendar-day.svg" class="service-icon">
+            <h3>Catalyst</h3>
+            <p>Single 2-hour session dedicated to developing your action plan. Best for those who just need a little push in the right direction.</p>
+            <p class="service-price">$200</p>
+          </div>
+          <div class="service">
+            <img src="icons/calendar-week.svg" class="service-icon">
+            <h3>Furtherance</h3>
+            <p>6 sessions focused on integrating your action plan into daily life. The right amount of support for most humans.</p>
+            <p class="service-price">$1000</p>
+          </div>
+          <div class="service">
+            <img src="icons/calendar-month.svg" class="service-icon">
+            <h3>Transfurmation</h3>
+            <p>12 sessions offering comprehensive support through CAT practices such as meowsic therapy and catharsis. For those who need more help.</p>
+            <p class="service-price">$1800</p>
+          </div>
+        </div>
+        <button class="service-cta">Schedule Session</button>
+      </div>
+    </div>
+  </main>
+</Layout>
+<style>
+  .hero {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 400px;
+    width: 100%;
+    z-index: 1;
+  }
+  .hero::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "";
+    background-image: url(../images/sunset.jpg);
+    background-size: cover;
+    background-position: center;
+    opacity: 0.65;
+    height: 400px;
+    width: 100%;
+    z-index: -1;
+  }
+  .hero-content {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .hero-heading {
+    font-size: 2.5rem;
+  }
+  .container {
+    display: flex;
+    justify-content: center;
+  }
+  .description {
+    padding: 2rem;
+    max-width: 1000px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    font-size: 1.2rem;
+  }
+  .description h2 {
+    text-align: center;
+    color: var(--primary-color);
+  }
+  .description h3 {
+    color: var(--primary-color);
+  }
+  .stats-container {
+    background-color: var(--primary-color);
+  }
+  .stats {
+    padding: 2rem;
+    max-width: 1000px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .stat {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .stat-number {
+    font-weight: bold;
+    font-size: 1.5rem;
+  }
+  .services-wrapper {
+    padding: 2rem;
+    max-width: 1000px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+  .services {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1rem;
+  }
+  .service {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .service-icon {
+    width: 5rem;
+    height: 5rem;
+  }
+  .service p {
+    padding: 0 1rem;
+  }
+  .service-price {
+    margin-top: 0.5rem;
+    font-weight: bold;
+  }
+  .service-cta {
+    font-family: inherit;
+    font-size: 1.1rem;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+  }
+  .service-cta:hover {
+    opacity: 85%;
+  }
+</style>
