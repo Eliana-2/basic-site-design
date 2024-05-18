@@ -1,0 +1,97 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Catalyst Life Coaching - Contact">
+  <main>
+    <div class="container">
+      <div class="contact-wrapper">
+        <h1>Get in Touch</h1>
+        <div class="contact">
+          <div class="contact-content">
+            <div class="contact-info-wrapper">
+              <h2>Contact Info</h2>
+              <div class="contact-info">
+                <img src="icons/email.svg">
+                <p>catalyst@catmail.meow</p>
+              </div>
+              <div class="contact-info">
+                <img src="icons/phone.svg">
+                <p>(123) 456-7890</p>
+              </div>
+              <div class="contact-info">
+                <img src="icons/map-marker.svg">
+                <address>123 Scratching Post Dr<br />Catsville, CAT 12345</address>
+              </div>
+            </div>
+            <div class="contact-socials">
+              <h2>Follow Us</h2>
+              <div class="socials-links">
+                <a href="#" class="icon-link"><img src="icons/facebook.svg"></a>
+                <a href="#" class="icon-link"><img src="icons/twitter.svg"></a>
+                <a href="#" class="icon-link"><img src="icons/google-plus.svg"></a>
+              </div>
+            </div>
+          </div>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d106602.06493550244!2d-118.53751476488436!3d33.38895751080025!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80dd6f237be18b25%3A0x3e59a3d5c5f50eab!2sSanta%20Catalina%20Island!5e0!3m2!1sen!2sus!4v1715984298917!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+    </div>
+  </main>
+</Layout>
+
+<style >
+  .container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  .contact-wrapper, .form-wrapper {
+    padding: 2rem;
+    width: 1000px;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: center;
+  }
+  .contact-wrapper h1 {
+    text-align: center;
+  }
+  .contact {
+    width: inherit;
+    display: flex;
+    justify-content: space-between;
+  }
+  .contact-content {
+    padding: 2rem;
+    font-size: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 50%;
+  }
+  .contact-info-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  .contact-info {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  .contact-info img {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+  .socials-links {
+    display: flex;
+    gap: 1rem;
+  }
+  .contact-socials img {
+    width: 2.5rem
+  }
+  iframe {
+    width: 50%;
+  }
+</style>
