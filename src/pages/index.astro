@@ -56,9 +56,6 @@ import Layout from '../layouts/Layout.astro';
 </Layout>
 
 <style>
-  main {
-    font-size: 1.2rem;
-  }
   .hero {
     position: relative;
     display: flex;
@@ -86,6 +83,7 @@ import Layout from '../layouts/Layout.astro';
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
   }
   .hero-heading {
     font-size: 2.5rem;
@@ -159,7 +157,7 @@ import Layout from '../layouts/Layout.astro';
     max-width: 1000px;
   }
   .social-proof p {
-    font-size: 1.75rem;
+    font-size: var(--emphasis-font-size);
     font-style: italic;
     font-weight: bold;
   }

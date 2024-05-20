@@ -31,9 +31,6 @@ import Layout from '../layouts/Layout.astro';
   </main>
 </Layout>
 <style>
-  main {
-    font-size: 1.2rem;
-  }
   .container {
     display: flex;
     justify-content: center;
@@ -60,14 +57,15 @@ import Layout from '../layouts/Layout.astro';
   .history-content {
     display: flex;
     align-items: center;
-    gap: 2rem;
     height: var(--history-image-height);
+    gap: 1rem;
   }
   .history-text {
-    width: var(--history-image-width);
+    padding: 1rem;
+    width: 50%;
   }
   .history img {
-    width: var(--history-image-width);
+    width: 50%;
     height: auto;
     border-radius: 1rem;
   }
@@ -82,7 +80,7 @@ import Layout from '../layouts/Layout.astro';
     text-align: left;
   }
   .cta button {
-    font-size: 1.25rem;
+    font-size: inherit;
     margin-top: 1rem;
     font-family: inherit;
     padding: 0.5rem;
