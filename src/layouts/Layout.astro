@@ -10,23 +10,23 @@ const currentPath = pathname.slice(1);
 		<meta charset="UTF-8" />
 		<meta name="description" content="Astro description" />
 		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <link rel="preload" as="font" href="/fonts/Dekko-Regular.woff2" type="font/woff2" crossorigin="anonymous">
+		<link rel="icon" type="image/svg+xml" href="/basic-site-design/favicon.svg" />
+    <link rel="preload" as="font" href="/basic-site-design/fonts/Dekko-Regular.woff2" type="font/woff2" crossorigin="anonymous">
 		<title>{title}</title>
 	</head>
 	<body>
     <header>
       <div class="header-logo">
-        <img src="/icons/cat.svg">
+        <img src="/basic-site-design/icons/cat.svg">
         <h2 class="header-heading"><span>Cat</span>alyst Life Coaching</h2>
       </div>
       <nav>
-        <button class="nav-button"><img src="/icons/menu.svg" class="hamburger-icon"></button>
+        <button class="nav-button"><img src="/basic-site-design/icons/menu.svg" class="hamburger-icon"></button>
         <div class="nav-links">
-          <a class={currentPath === "" ? "active" : "" } href="/basic-site-design">Home</a>
-          <a class={currentPath === "about" ? "active" : "" }href="/basic-site-design/about">About</a>
-          <a class={currentPath === "services" ? "active" : "" }href="/basic-site-design/services">Services</a>
-          <a class={currentPath === "contact" ? "active" : "" }href="/basic-site-design/contact">Contact</a>
+          <a class={currentPath === "basic-site-design/" ? "active" : "" } href="/basic-site-design">Home</a>
+          <a class={currentPath === "basic-site-design/about/" ? "active" : "" } href="/basic-site-design/about">About</a>
+          <a class={currentPath === "basic-site-design/services/" ? "active" : "" } href="/basic-site-design/services">Services</a>
+          <a class={currentPath === "basic-site-design/contact/" ? "active" : "" } href="/basic-site-design/contact">Contact</a>
         </div>
       </nav>
     </header>
@@ -41,7 +41,7 @@ const currentPath = pathname.slice(1);
           Catsville, CAT 12345
         </address>
       </div>
-      <img src="../icons/cat.svg" class="footer-logo">
+      <img src="/basic-site-design/icons/cat.svg" class="footer-logo">
       <div class="footer-contact">
         <h4>Contact</h4>
         <p>catalyst@catmail.meow</p>
@@ -53,7 +53,7 @@ const currentPath = pathname.slice(1);
 <style is:global>
   @font-face {
     font-family: 'DekkoRegular';
-    src: url('/fonts/Dekko-Regular.woff2') format('woff2');
+    src: url('/basic-site-design/fonts/Dekko-Regular.woff2') format('woff2');
     size-adjust: 125%;
     font-weight: normal;
     font-style: normal;
