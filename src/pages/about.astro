@@ -57,7 +57,6 @@ import Layout from '../layouts/Layout.astro';
   .history-content {
     display: flex;
     align-items: center;
-    height: var(--history-image-height);
     gap: 1rem;
   }
   .history-text {
@@ -65,6 +64,7 @@ import Layout from '../layouts/Layout.astro';
     width: 50%;
   }
   .history img {
+    aspect-ratio: 640/604;
     width: 50%;
     height: auto;
     border-radius: 1rem;
@@ -90,5 +90,17 @@ import Layout from '../layouts/Layout.astro';
   }
   .cta button:hover {
     opacity: 75%;
+  }
+  @media (max-width: 600px) {
+    .history-content {
+      flex-direction: column-reverse;
+    }
+    .history-text, .history img {
+      width: 80%;
+      max-width: 400px;
+    }
+    .history-text {
+      padding: 0;
+    }
   }
 </style>

@@ -78,19 +78,40 @@ import Layout from '../layouts/Layout.astro';
     display: flex;
     align-items: center;
     gap: 1rem;
+    font-size: 1.25rem;
   }
   .contact-info img {
-    width: 1.5rem;
-    height: 1.5rem;
+    width: 2rem;
+    height: 2rem;
   }
   .socials-links {
     display: flex;
     gap: 1rem;
   }
   .contact-socials img {
-    width: 2.5rem
+    width: 2rem
   }
   iframe {
     width: 50%;
+  }
+  @media (max-width: 600px) {
+    .contact {
+      flex-direction: column;
+      align-items: center;
+      gap: 2rem;
+    }
+    .contact-content {
+      flex-direction: row;
+      justify-content: space-evenly;
+      padding: 0;
+    }
+    .contact-content, iframe {
+      width: 100%;
+    }
+    .socials-links {
+      flex-direction: column;
+      align-items: center;
+      gap: 0.5rem;
+    }
   }
 </style>

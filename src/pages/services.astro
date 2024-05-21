@@ -71,6 +71,7 @@ import Layout from '../layouts/Layout.astro';
 </Layout>
 <style>
   .hero {
+    text-shadow: white 1px 1px 5px;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -87,7 +88,7 @@ import Layout from '../layouts/Layout.astro';
     background-image: url(../images/sunset.jpg);
     background-size: cover;
     background-position: center;
-    opacity: 0.65;
+    opacity: 0.55;
     height: 400px;
     width: 100%;
     z-index: -1;
@@ -177,5 +178,24 @@ import Layout from '../layouts/Layout.astro';
   }
   .service-cta:hover {
     opacity: 85%;
+  }
+  @media (max-width: 750px) {
+    .hero, .hero:after {
+      height: 340px;
+    }
+  }
+  @media (max-width: 600px) {
+    .hero, .hero:after {
+      height: 280px;
+    }
+    .services {
+      flex-direction: column;
+      align-items: center;
+      gap: 3rem;
+    }
+    .service {
+      width: 80%;
+      max-width: 400px;
+    }
   }
 </style>

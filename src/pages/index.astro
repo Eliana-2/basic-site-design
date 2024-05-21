@@ -57,6 +57,7 @@ import Layout from '../layouts/Layout.astro';
 
 <style>
   .hero {
+    text-shadow: white 1px 1px 5px;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -73,7 +74,7 @@ import Layout from '../layouts/Layout.astro';
     background-image: url(../images/cat_centered_wide.jpg);
     background-size: cover;
     background-position: center;
-    opacity: 0.7;
+    opacity: 0.6;
     height: 800px;
     width: 100%;
     z-index: -1;
@@ -160,5 +161,30 @@ import Layout from '../layouts/Layout.astro';
     font-size: var(--emphasis-font-size);
     font-style: italic;
     font-weight: bold;
+  }
+  @media (max-width: 1000px)
+  {
+    .hero, .hero:after {
+      height: 600px;
+    }
+  }
+  @media (max-width: 750px) {
+    .hero, .hero:after {
+      height: 400px;
+    }
+  }
+  @media (max-width: 600px) {
+    .hero, .hero:after {
+      height: 320px;
+    }
+    .benefit-container {
+      flex-direction: column;
+      align-items: center;
+      gap: 1rem;
+    }
+    .benefit {
+      width: 100%;
+      max-width: 350px;
+    }
   }
 </style>
