@@ -62,7 +62,7 @@ const currentPath = pathname.slice(1);
 	:root {
     font-size: 120%;
     --heading-font: 'DekkoRegular', sans-serif;
-    --body-font: 'Verdana', 'sans-serif';
+    --body-font: serif;
     --emphasis-font-size: 1.75rem;
     --background-color: #D9A3E8;
     --primary-color: #C87ADE;
@@ -78,17 +78,20 @@ const currentPath = pathname.slice(1);
   h1, h2, h3, h4, h5, h6 {
     font-family: var(--heading-font);
   }
+  button {
+    color: black;
+  }
   @media (max-width: 1000px) {
     :root {
       font-size: 100%;
     }
   @media (max-width: 750px) {
     :root {
-      font-size: 80%;
+      font-size: 90%;
     }
   @media (max-width: 600px) {
     :root {
-      font-size: 70%;
+      font-size: 75%;
     }
   }
   }
