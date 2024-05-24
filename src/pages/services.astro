@@ -186,7 +186,16 @@ import Layout from '../layouts/Layout.astro';
   }
   @media (max-width: 600px) {
     .hero, .hero:after {
-      height: 280px;
+      height: 340px;
+    }
+    .stats {
+      flex-direction: column;
+      align-items: center;
+      gap: 1rem;
+    }
+    .stat {
+      width: 100%;
+      max-width: 200px;
     }
     .services {
       flex-direction: column;
@@ -194,7 +203,7 @@ import Layout from '../layouts/Layout.astro';
       gap: 3rem;
     }
     .service {
-      width: 80%;
+      width: 100%;
       max-width: 400px;
     }
   }

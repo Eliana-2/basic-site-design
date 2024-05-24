@@ -86,9 +86,6 @@ import Layout from '../layouts/Layout.astro';
     align-items: center;
     text-align: center;
   }
-  .hero-heading {
-    font-size: 2.5rem;
-  }
   .hero-button {
     margin-top: 2rem;
     font-family: inherit;
@@ -175,10 +172,13 @@ import Layout from '../layouts/Layout.astro';
   }
   @media (max-width: 600px) {
     .hero, .hero:after {
-      height: 360px;
+      height: 400px;
     }
     .hero {
       text-shadow: white 0px 0px 2px;
+    }
+    .container {
+      padding-inline: 2rem;
     }
     .benefit-container {
       flex-direction: column;
